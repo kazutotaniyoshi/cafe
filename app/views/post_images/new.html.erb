@@ -1,0 +1,33 @@
+<div class="text-center">
+  <%= form_with model: @post_image, local:true do |f| %>
+    <h1>画像投稿フォーム</h1>
+    <br>
+    <br>
+    <br>
+    <h4>写真</h4>
+    <br>
+    <%= f.attachment_field :image %>
+    <br>
+    <br>
+    <br>
+    <h4>ショップ名</h4>
+    <br>
+    <%= f.text_field :shop_name %>
+    <br>
+    <br>
+    <br>
+    <h4>おすすめのメニュー</h4>
+    <br>
+    <%= f.text_field :menu %>
+    <br>
+    <br>
+    <br>
+    <h4>説明</h4>
+    <br>
+    <%= f.text_area :caption %>
+    <br>
+    <br>
+    <br>
+    <%= f.submit '投稿' %>
+  <% end %>
+</div>

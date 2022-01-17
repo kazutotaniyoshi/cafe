@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2022_01_15_083042) do
   create_table "post_images", force: :cascade do |t|
     t.text "shop_name"
     t.string "image_id"
+    t.string "menu"
     t.text "caption"
     t.integer "user_id"
     t.text "address"
@@ -29,6 +30,7 @@ ActiveRecord::Schema.define(version: 2022_01_15_083042) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "name"
+    t.string "brand"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
